@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>TODO List</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>TODO List</h1>
+        </header>
+
+
+        <form class="inputSec" id="formAddTask">
+            <label for="iadicionar">Adicione sua tarefa</label>
+            <input type="text" name="adicionar" id="iadicionar" placeholder=" O que vai fazer ?"> <button id="add" type="submit"></button>
+        </form>
+
+        <form class="inputSec hide" id="formEditTask">
+            <label for="iadicionarSub">Edite sua tarefa</label>
+            <input type="text" name="adicionarSub" id="iadicionarSub" placeholder=" O que vai editar ?"> <button id="addEdit" type="submit"></button>
+            <button id="cancel"></button>
+        </form>
+
+        <div class="alinhador">
+
+            <form class="inputSec" id="formSearchTask">
+                <label for="ipesquisar" id="pesq">Pesquisar:</label>
+                <input type="search" name="pesquisar" id="ipesquisar" placeholder=" Buscar..."> <button id="search" type="submit"></button>
+            </form>
+
+            <section class="inputSec" id="formFilter">
+                <label for="ifiltro" id="labelFiltrar">Filtrar:</label>
+                <select name="filtros" id="ifiltros">
+                    <option value="todas">Todas</option>
+                    <option value="feitas">Feitas</option>
+                    <option value="a fazer">A fazer</option>
+                </select>
+            </section>
+        </div>
+
+
+        <section class="listasAdd" >
+
+
+        </section>
+    </main>
+    <script src="script/todo.js"></script>
+</body>
+</html>

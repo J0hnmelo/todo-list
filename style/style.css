@@ -1,0 +1,190 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root {
+    --cor1: rgb(41, 57, 77);
+    --cor2: rgb(108, 128, 151);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../img/montanhasWEBP_1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    background-color: #ece6e6;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #0000009c;
+    color: #353232;
+    font-weight: bold;
+    max-width: 400px;
+    transition: all .5s;
+    max-height: 70vh;
+}
+header{
+    text-align: center;
+    padding: 15px;
+    text-decoration: underline;
+}
+.inputSec {
+    padding: 10px;
+}
+.inputSec label {
+    display: block;
+}
+#labelFiltrar {
+    margin-bottom: 10px;
+}
+#pesq {
+    margin: 0;
+}
+.inputSec input {
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #232323b6;
+    padding-left: 10px;
+}
+.inputSec input[type="text"]{
+    width: 200px;
+}
+.inputSec input::placeholder {
+    font-style: italic;
+    color: #232323ab;
+}
+.inputSec button {
+    height: 30px;
+    width: 30px;
+    border: 1.5px solid var(--cor1);
+    outline: 1px solid var(--cor1);
+    cursor: pointer;
+}
+html button:active {
+    transform: translate(2%,2%);
+}
+html button:hover {
+    background-color: var(--cor2);
+}
+.inputSec.hide {
+    display: none;
+}
+.listasAdd.hide{
+    display: none;
+}
+.listasColocadas.done {
+    background-color: var(--cor1);
+    color: #ece6e6;
+    font-style: italic;
+    text-decoration: line-through;
+}
+#search {
+    background-image: url('../img/backspace-icon.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    position: relative;
+    top: 13%;
+}
+#add {
+    background-image: url('../img/add-icon.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    position: relative;
+    top: 8px;
+}
+#addEdit {
+    background-image: url('../img/att-icon.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    position: relative;
+    top: 8px;
+}
+#cancel {
+    background-image: url('../img/close-icon.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 8px;
+}
+.alinhador {
+    display: flex;
+}
+select {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    top: -1%;
+    padding: 5px;
+}
+
+.listasColocadas{
+    background-color: white;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    transition: all .5s;
+
+}
+.sep {
+    width: 50%;
+    margin-left: 20px;
+}
+
+#edit {
+    height: 25px;
+    width: 30px;
+    border: 1.5px solid var(--cor1);
+    outline: 1px solid var(--cor1);
+    background-image: url('../img/edit-icon.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    cursor: pointer;
+}
+#delete {
+    height: 25px;
+    width: 30px;
+    border: 1.5px solid var(--cor1);
+    outline: 1px solid var(--cor1);
+    background-image: url(../img/delete-icon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#ifeito {
+    width: 30px;
+    height: 23px;
+    border: 1.5px solid var(--cor1);
+    outline: 1px solid var(--cor1);
+    background-image: url(../img/check-icon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    cursor: pointer;
+}
+.listasAdd {
+    overflow-y: scroll;
+    max-height: 200px;
+}
