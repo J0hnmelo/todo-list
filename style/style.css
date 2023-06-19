@@ -188,3 +188,8 @@ select {
     overflow-y: scroll;
     max-height: 200px;
 }
+@media screen and (max-width: 700px){
+    #search {
+        top: .8em;
+    }
+}
