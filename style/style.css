@@ -97,7 +97,7 @@ html button:hover {
     background-repeat: no-repeat;
     background-size: 60%;
     position: relative;
-    top: 13%;
+    top: .7em;
 }
 #add {
     background-image: url('../img/add-icon.png');
